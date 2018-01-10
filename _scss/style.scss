@@ -213,7 +213,7 @@ body {
         max-width: 100%;
         div{
           &.mail{
-            margin: 0 0 0 1em;
+          /*  margin: 0 0 0 1em;*/
           }
           button{
             background-color: #B7B7B7;
@@ -441,6 +441,7 @@ body {
         right: 17%;
         list-style: none;
         display: none;
+
         > li {
           opacity: 0;
           transition: .5s;
@@ -660,6 +661,12 @@ img.gaffel{
 }
 .mobilbanner {
   display: block;
+}
+
+@media screen and (max-width: 1049px) and (orientation: landscape) {
+nav.mobil ul {
+    columns: 2;
+}
 }
 
 @media screen and (min-width: 1050px){

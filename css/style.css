@@ -152,7 +152,7 @@ body {
         padding-bottom: 1em;
         max-width: 100%; }
         body footer div form div.mail {
-          margin: 0 0 0 1em; }
+          /*  margin: 0 0 0 1em;*/ }
         body footer div form div button {
           background-color: #B7B7B7;
           border-radius: 10px;
@@ -530,6 +530,10 @@ img.gaffel {
 .mobilbanner {
   display: block; }
 
+@media screen and (max-width: 1049px) and (orientation: landscape) {
+  nav.mobil ul {
+    -webkit-columns: 2;
+            columns: 2; } }
 @media screen and (min-width: 1050px) {
   .desktopbanner {
     display: block; }
