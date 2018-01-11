@@ -8,6 +8,25 @@ $backgroundColor: white;
   font-family: 'open sans';
 }
 
+body{
+  footer{
+    div.formdiv{
+      form{
+        div.mail{
+          input{
+
+          }
+        }
+      }
+    }
+    div.kontaktinfo{
+      div{
+        text-align: center;
+      }
+    }
+  }
+}
+
 body>nav.desktop>ul>li>a:hover{
   opacity: 0.75;
 }
@@ -30,9 +49,7 @@ body>main>div.velkommentekst{
 
   max-width: 95%;
   background-color: black;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -4em;
+  margin: -4em auto 2em auto;
   z-index: 100;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -109,6 +126,7 @@ body{
             font-size: 2em;
             margin-top: 0;
             margin-bottom: 0;
+            font-family: 'Playfair display';
           }
           figcaption{
             color: $textColor;
@@ -121,6 +139,7 @@ body{
           color: $textColor;
           font-size: 1.5em;
           margin-bottom: 0.5em;
+          font-family: 'Playfair display';
         }
         p{
           color: $textColor;
@@ -144,6 +163,7 @@ body{
           color: $textColor;
           font-size: 2em;
           margin-bottom: 0;
+          font-family: 'Playfair display';
         }
         div.reviews{
           div.review{
@@ -495,7 +515,7 @@ article.michelle-indhold{
   font-size: 1.8em;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
-  font-family: Playfair Display;
+  font-family: 'Playfair Display';
 }
 p{
   color: black;
@@ -794,6 +814,9 @@ body>main>div.velkommentekst{
           }
           p{
             color: black;
+            max-width: 30em;
+            margin: 0 auto;
+            text-align: justify;
           }
         }
         &.reviewdiv{
@@ -836,6 +859,7 @@ body>main>div.velkommentekst{
                 color: black;
                 margin-bottom: 0;
                 margin-top: 0;
+                text-align: justify;
               }
               h4{
                 color: black;
@@ -951,8 +975,18 @@ body{
     display: flex;
     justify-content: space-around;
     div{
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 100%;
       &.formdiv{
         width: 30%;
+        form{
+          div{
+            input{
+              width: 80%;
+            }
+          }
+        }
       }
       display: inline-block;
       form{
@@ -965,7 +999,7 @@ body{
       }
 
       &.kontaktinfo{
-        width: 50%;
+        width: 50em;
         padding-top: 1em;
         display: flex;
         justify-content: space-around;
@@ -974,6 +1008,11 @@ body{
         padding-bottom: 0.1em;
         height: 3em;
         margin-top: 0.5em;
+        div{
+          a{
+            font-size: 0.9em;
+          }
+        }
       }
       &.someikoner{
         margin-top: 0.8em;

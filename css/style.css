@@ -1,8 +1,10 @@
 @charset "UTF-8";
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'open sans'; }
+
+body footer div.kontaktinfo div {
+  text-align: center; }
 
 body > nav.desktop > ul > li > a:hover {
   opacity: 0.75; }
@@ -22,9 +24,7 @@ body > main > div.velkommentekst {
   z-index: 16;*/
   max-width: 95%;
   background-color: black;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -4em;
+  margin: -4em auto 2em auto;
   z-index: 100;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -54,8 +54,7 @@ body {
       color: black;
       background-color: rgba(0, 0, 0, 0.5);
       position: absolute;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
       top: 50%;
       left: 50%;
       width: 100%;
@@ -81,7 +80,8 @@ body {
         color: Black;
         font-size: 2em;
         margin-top: 0;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        font-family: 'Playfair display'; }
       body main.nicolai div.ydelsesikoner figure figcaption {
         color: black; }
     body main.nicolai div.norreport {
@@ -89,7 +89,8 @@ body {
       body main.nicolai div.norreport h5 {
         color: black;
         font-size: 1.5em;
-        margin-bottom: 0.5em; }
+        margin-bottom: 0.5em;
+        font-family: 'Playfair display'; }
       body main.nicolai div.norreport p {
         color: black; }
     body main.nicolai div.reviewdiv {
@@ -104,7 +105,8 @@ body {
       body main.nicolai div.reviewdiv h5 {
         color: black;
         font-size: 2em;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        font-family: 'Playfair display'; }
       body main.nicolai div.reviewdiv div.reviews div.review h2.gås {
         color: #FFBC37;
         font-family: arial, sans-serif;
@@ -137,8 +139,7 @@ body {
       top: 30.8vh;
       display: block;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
       background-color: rgba(0, 0, 0, 0.5); }
   body footer {
     padding-top: 5vh;
@@ -170,8 +171,7 @@ body {
           padding: 12px 20px;
           display: inline-block;
           border: 1px solid #ccc;
-          -webkit-box-sizing: border-box;
-                  box-sizing: border-box;
+          box-sizing: border-box;
           border-radius: 10px;
           padding: 0.5em; }
       body footer div.someikoner {
@@ -240,8 +240,7 @@ body {
               /*Tillader placering af knapper oven på billeder*/
               outline: none;
               /*Fjerner markering af knappen ved klik*/
-              -webkit-transform: translate(0%, -50%);
-                      transform: translate(0%, -50%);
+              transform: translate(0%, -50%);
               /*Justeringer i forhold til centrum på y-aksen*/
               top: 50%;
               /*Placér midt på billedets y-akse*/ }
@@ -251,8 +250,7 @@ body {
               /*Afstanden fra højre kant af kassen skal være 0*/ }
           body main.whitepower div article .miniatures {
             /*Miniaturer under det store billede i galleriet*/
-            -webkit-columns: 3;
-                    columns: 3;
+            columns: 3;
             /*3 miniaturer ved siden af hinanden*/
             width: 100%;
             margin: 0.5em 0 0 0;
@@ -305,7 +303,6 @@ body {
       left: 0;
       display: block;
       background: white;
-      -webkit-transition: .5s;
       transition: .5s; }
     body input + label span:first-child {
       top: 20%; }
@@ -318,12 +315,10 @@ body {
     top: 50%; }
   body input:checked + label span:first-child {
     opacity: 1;
-    -webkit-transform: rotate(225deg);
-            transform: rotate(225deg); }
+    transform: rotate(225deg); }
   body input:checked + label span:last-child {
     opacity: 1;
-    -webkit-transform: rotate(-225deg);
-            transform: rotate(-225deg); }
+    transform: rotate(-225deg); }
   body input ~ nav.mobil {
     background: black;
     position: fixed;
@@ -332,7 +327,6 @@ body {
     width: 100%;
     /*  height: 3.5em;*/
     height: 0.001vh;
-    -webkit-transition: .5s;
     transition: .5s;
     /*  transition-delay: .5s; Hvorfor?*/
     z-index: 14;
@@ -346,10 +340,8 @@ body {
       display: none; }
       body input ~ nav.mobil > ul > li {
         opacity: 0;
-        -webkit-transition: .5s;
         transition: .5s;
-        -webkit-transition-delay: 0s;
-                transition-delay: 0s; }
+        transition-delay: 0s; }
         body input ~ nav.mobil > ul > li > a {
           font-family: Open Sans;
           text-decoration: none;
@@ -362,14 +354,12 @@ body {
             color: #FFBC37; }
   body input:checked ~ nav {
     height: 100%;
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s; }
+    transition-delay: 0s; }
     body input:checked ~ nav > ul {
       display: block; }
       body input:checked ~ nav > ul > li {
         opacity: 1;
-        -webkit-transition-delay: .5s;
-                transition-delay: .5s; }
+        transition-delay: .5s; }
 
 /*Michelle start*/
 #toppic {
@@ -387,7 +377,7 @@ article.michelle-indhold {
     font-size: 1.8em;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
-    font-family: Playfair Display; }
+    font-family: 'Playfair Display'; }
   article.michelle-indhold p {
     color: black;
     margin: 0;
@@ -463,21 +453,14 @@ a:link {
 
 /* Flexbox */
 .gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   position: relative;
   width: 100%; }
 
 .galleryitem {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 20em;
-          flex: 1 0 20em;
+  flex: 1 0 20em;
   max-width: 100%;
   margin: 1rem;
   margin-top: 0; }
@@ -532,8 +515,7 @@ img.gaffel {
 
 @media screen and (max-width: 1049px) and (orientation: landscape) {
   nav.mobil ul {
-    -webkit-columns: 2;
-            columns: 2; } }
+    columns: 2; } }
 @media screen and (min-width: 1050px) {
   .desktopbanner {
     display: block; }
@@ -571,8 +553,7 @@ img.gaffel {
     display: block;
     max-width: 5%;
     float: left;
-    -webkit-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
     margin-top: 9em; }
   body div.mobilindexbillede {
     display: none; }
@@ -594,8 +575,7 @@ img.gaffel {
       color: black;
       background-color: rgba(0, 0, 0, 0.5);
       position: absolute;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
       top: 50%;
       left: 50%;
       width: 100%;
@@ -604,15 +584,9 @@ img.gaffel {
     max-width: 85%;
     background-color: white; }
     body main.nicolai div.ydelsesikoner {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-align: baseline;
-          -ms-flex-align: baseline;
-              align-items: baseline;
+      justify-content: space-between;
+      align-items: baseline;
       margin-top: 6em; }
       body main.nicolai div.ydelsesikoner figure {
         max-width: 30%;
@@ -640,7 +614,10 @@ img.gaffel {
         font-size: 2em;
         margin-bottom: 0.5em; }
       body main.nicolai div.norreport p {
-        color: black; }
+        color: black;
+        max-width: 30em;
+        margin: 0 auto;
+        text-align: justify; }
     body main.nicolai div.reviewdiv {
       margin-bottom: 3em;
       text-align: center; }
@@ -656,12 +633,8 @@ img.gaffel {
         font-size: 2em;
         margin-bottom: 0; }
       body main.nicolai div.reviewdiv div.reviews {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        justify-content: space-between;
         max-width: 80%;
         margin: 0 auto; }
         body main.nicolai div.reviewdiv div.reviews div.review {
@@ -676,7 +649,8 @@ img.gaffel {
           body main.nicolai div.reviewdiv div.reviews div.review p {
             color: black;
             margin-bottom: 0;
-            margin-top: 0; }
+            margin-top: 0;
+            text-align: justify; }
           body main.nicolai div.reviewdiv div.reviews div.review h4 {
             color: black;
             margin-top: 0; }
@@ -748,16 +722,18 @@ img.gaffel {
             body nav.desktop ul li a.current {
               color: #FFBC37; }
     body footer {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
+      justify-content: space-around; }
       body footer div {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
         display: inline-block;
         display: inline-block; }
         body footer div.formdiv {
           width: 30%; }
+          body footer div.formdiv form div input {
+            width: 80%; }
         body footer div form {
           display: inline-block;
           width: 100%; }
@@ -765,32 +741,24 @@ img.gaffel {
             width: 100%;
             padding: 0; }
         body footer div.kontaktinfo {
-          width: 50%;
+          width: 50em;
           padding-top: 1em;
-          display: -webkit-box;
-          display: -ms-flexbox;
           display: flex;
-          -ms-flex-pack: distribute;
-              justify-content: space-around;
+          justify-content: space-around;
           border-left: 1px solid white;
           border-right: 1px solid white;
           padding-bottom: 0.1em;
           height: 3em;
           margin-top: 0.5em; }
+          body footer div.kontaktinfo div a {
+            font-size: 0.9em; }
         body footer div.someikoner {
           margin-top: 0.8em; }
 
   body main.whitepower div div.grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: space-between;
+    flex-direction: column;
     margin: 0 0 0 0.2em; }
     body main.whitepower div div.grid div.billederher {
       display: block;
@@ -812,3 +780,5 @@ img.gaffel {
 @media screen and (min-width: 700px) {
   body > main > div.velkommentekst > h4 {
     font-size: 2.19em; } }
+
+/*# sourceMappingURL=style.css.map */
