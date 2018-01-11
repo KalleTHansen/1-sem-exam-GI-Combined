@@ -342,6 +342,9 @@ body {
             outline:none;/*Fjerner markering af knappen ved klik*/
             transform: translate(0%, -50%); /*Justeringer i forhold til centrum på y-aksen*/
             top: 50%; /*Placér midt på billedets y-akse*/
+            &:hover {
+              color: $accentColor;
+            }
           }
 
           .w3-display-right { /*Knap til at vise næste billede i slideshow*/
@@ -576,19 +579,25 @@ margin-top: 0.3em;
         text-align: center;
     }
 
-body main.whitepower div.videoWrapper { /*Så den embeddede video fylder hele bredden med det rigtige h/b-forhold*/
+body main.whitepower div{
+.interview{
+  margin: 2em auto;
+  padding-top: 0;
+}
+.videoWrapper { /*Så den embeddede video fylder hele bredden med det rigtige h/b-forhold*/
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
     margin-top:0;
-}
-.videoWrapper iframe {
+
+iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-
+}
+}
 }
 
 /* Link books */
@@ -598,9 +607,9 @@ body main.whitepower div.videoWrapper { /*Så den embeddede video fylder hele br
   color: black;
   background-color: #FFBC37;
   border-radius: 25px;
-  padding: 0.7em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 0.7em 1em;
+  margin-top: 1em;
+  display: inline-block; /*så den ikke klipper ind i p*/ 
 }
 
 a:link {
@@ -609,12 +618,13 @@ a:link {
 
 /* Flexbox */
 
-.gallery {
+body main.whitepower .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
   width: 100%;
+  margin-top: 0.3em;
 }
 
 .galleryitem {
@@ -622,6 +632,7 @@ a:link {
   max-width: 100%;
   margin: 1rem;
   margin-top: 0;
+  margin-bottom: 2em;
 }
 
 .galleryitem img{
@@ -647,7 +658,6 @@ a:link {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1.8rem;
   line-height: 1.5em;
   max-width: 438px;
 }
