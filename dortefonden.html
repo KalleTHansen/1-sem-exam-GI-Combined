@@ -9,6 +9,12 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-109349681-2');
+
+      window.addEventListener('resize', function() {
+    if (window.matchMedia('(min-width: 1076px)').matches) {
+        document.getElementById('burger').checked = false;
+    }
+    }, true);
     </script>
 
     <meta charset="utf-8">
