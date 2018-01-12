@@ -335,7 +335,7 @@ body {
     padding-bottom: 3.5em; }
     body input ~ nav.mobil > ul {
       position: absolute;
-      top: 23%;
+      top: 15%;
       left: 7%;
       right: 17%;
       list-style: none;
@@ -493,7 +493,8 @@ body main.whitepower .gallery {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.5em;
-  max-width: 438px; }
+  max-width: 438px;
+  padding: 0 0.5em 0; }
 
 .mortenflex, .rasmusflex, .isabelflex {
   max-width: 30%;

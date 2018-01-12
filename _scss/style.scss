@@ -459,7 +459,7 @@ body {
       padding-bottom: 3.5em;
       > ul {
         position: absolute;
-        top: 23%;
+        top: 15%;
         left: 7%;
         right: 17%;
         list-style: none;
@@ -660,6 +660,7 @@ body main.whitepower .gallery {
   margin-right: auto;
   line-height: 1.5em;
   max-width: 438px;
+  padding: 0 0.5em 0;
 }
 
 .mortenflex, .rasmusflex, .isabelflex {
