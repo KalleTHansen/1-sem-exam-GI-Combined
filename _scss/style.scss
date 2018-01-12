@@ -342,9 +342,6 @@ body {
             outline:none;/*Fjerner markering af knappen ved klik*/
             transform: translate(0%, -50%); /*Justeringer i forhold til centrum på y-aksen*/
             top: 50%; /*Placér midt på billedets y-akse*/
-            &:hover {
-              color: $accentColor;
-            }
           }
 
           .w3-display-right { /*Knap til at vise næste billede i slideshow*/
@@ -693,13 +690,13 @@ img.gaffel{
   display: block;
 }
 
-@media screen and (max-width: 1059px) and (orientation: landscape) {
+@media screen and (max-width: 1075px) and (orientation: landscape) {
 nav.mobil ul {
     columns: 2;
 }
 }
 
-@media screen and (min-width: 1060px){
+@media screen and (min-width: 1076px){
   *{
 
   }
@@ -914,9 +911,10 @@ body{
               font-size: 3em; /*Størrelse på pilen*/
               padding: 0.3em 0.1em; /*Pilens kasse*/
             }
+            :hover {
+              color: $accentColor;
+            }
           }
-        }
-        p{
         }
       }
     }
