@@ -599,12 +599,20 @@ iframe {
 .buylink {
   font-weight: bold;
   color: black;
+  transition: color 0.2s ease;
   background-color: #FFBC37;
+  transition: background-color 0.2s ease;
   border-radius: 25px;
   padding: 0.7em 1em;
   margin-top: 1em;
   display: inline-block; /*så den ikke klipper ind i p*/
+
+&:hover {
+  background-color: #292929;
+  color: $accentColor;
 }
+}
+
 
 a:link {
     text-decoration: none;
