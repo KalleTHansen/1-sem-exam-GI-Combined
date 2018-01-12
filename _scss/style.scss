@@ -692,13 +692,13 @@ img.gaffel{
   display: block;
 }
 
-@media screen and (max-width: 1049px) and (orientation: landscape) {
+@media screen and (max-width: 1059px) and (orientation: landscape) {
 nav.mobil ul {
     columns: 2;
 }
 }
 
-@media screen and (min-width: 1050px){
+@media screen and (min-width: 1060px){
   *{
 
   }
@@ -957,6 +957,7 @@ body{
         width: 65%;
         float: right;
         margin-bottom: 0;
+        margin-right: 2%;
         li{
           float: right;
           padding-left: 0.8em;
