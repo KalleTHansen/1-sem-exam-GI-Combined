@@ -142,7 +142,7 @@ body {
       transform: translate(-50%, -50%);
       background-color: rgba(0, 0, 0, 0.5); }
   body footer {
-    padding-top: 5vh;
+    padding-top: 3vh;
     background-color: #292929; }
     body footer div {
       max-width: 90%;
